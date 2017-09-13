@@ -7,11 +7,11 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "https://github.com/jiutianhuanpei/SHBLame"
   s.license      = "MIT"
-  s.author             = { "shenhongbang" => "shenhongbang@163.com" }
+  s.author       = { "shenhongbang" => "shenhongbang@163.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/jiutianhuanpei/SHBLame.git", :tag => "0.0.1" }
   s.source_files  = "SHBLame/*"
   s.frameworks = "AVFoundation", "UIKit"
-  s.libraries = "lame"
+  s.vendored_libraries = "SHBLame/libmp3lame.a"
   s.requires_arc = true
 end
